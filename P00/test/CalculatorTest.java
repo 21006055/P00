@@ -55,10 +55,14 @@ public class CalculatorTest {
 			
 		Calculator cal = new Calculator();
 		int actual = cal.add(a, b); 
-			 
+		 
+		
 		int expected = 5555;
 		assertEquals (expected, actual);
-		assertNotEquals (expected, actual);
+		assertNotEquals (expected, 10);
+		assertTrue (a >= 0 && a <= 9999);
+		assertTrue (b >= 0 && b <= 9999);
+		
 		}
 	@Test
 	public void testSubtract() {
@@ -66,11 +70,14 @@ public class CalculatorTest {
 		int b = 2;
 			
 		Calculator cal = new Calculator();
-		int actual = cal. substract (a, b); 
+		int actual = cal.substract (a, b); 
 			 
 		int expected = 98;
 		assertEquals (expected, actual);
-		assertNotEquals (expected, actual);
+		assertNotEquals (expected, 10);
+		assertTrue (a >= 0 && a <= 9999);
+		assertTrue (b >= 0 && b <= 9999);
+		
 		}
 	@Test
 	public void testMultiple() {
@@ -82,7 +89,10 @@ public class CalculatorTest {
 			 
 		int expected = 200;
 		assertEquals (expected, actual);
-		assertNotEquals (expected, actual);
+		assertNotEquals (expected, 10);
+		assertTrue (a >= 0 && a <= 9999);
+		assertTrue (b >= 0 && b <= 9999);
+		
 		}
 	@Test
 	public void testDivide() {
@@ -94,7 +104,9 @@ public class CalculatorTest {
 			 
 		int expected = 50;
 		assertEquals (expected, actual);
-		assertNotEquals (expected, actual);
+		assertNotEquals (expected, 10);
+		
+		
 		}
 
 
